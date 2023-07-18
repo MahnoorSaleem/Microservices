@@ -1,0 +1,21 @@
+version: "3"
+services:
+  inventory-service:
+    build: ./inventory-service
+    ports:
+      - "5001:3001"
+
+  shipping-service:
+    build: ./shipping-service
+    ports:
+      - "5007:3002"
+
+  users-service:
+    build: ./users-service
+    ports:
+      - "5003:3003"
+
+  billing-service:
+    build: ./billing-service
+    ports:
+      - "5004:3000"
